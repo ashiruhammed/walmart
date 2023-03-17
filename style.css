@@ -1,0 +1,180 @@
+:root {
+  --secondary-color: rgb(37, 28, 59);
+  --primary-color: rgb(243, 237, 229);
+}
+
+body {
+  font-family: Roboto;
+  padding: 0.5rem;
+  background: var(--primary-color);
+}
+
+ul {
+  margin-top: 80px;
+  list-style-type: none;
+  line-height: 3rem;
+  cursor: pointer;
+}
+
+h1 {
+  inline-size: 18rem;
+}
+
+.list {
+  position: fixed;
+  height: 100vh;
+  top: -15px;
+  right: -1000px;
+  background: white;
+  width: 60vw;
+  transition: all 0.5s ease;
+}
+.hero {
+  margin-top: 2rem;
+}
+.menu,
+button {
+  z-index: 999999;
+  cursor: pointer;
+}
+
+.toggle-list {
+  right: 1px;
+}
+.hide-toggle {
+  display: none;
+}
+
+.pro {
+  display: none;
+}
+
+.nav,
+.foot-logo {
+  justify-content: space-between;
+}
+
+.deck-logo {
+  margin: 13px 20px;
+  column-gap: 15px;
+}
+.deck-btn,
+.nav,
+.deck-logo,
+.hero,
+.foot-logo,
+.log {
+  display: flex;
+}
+
+.btn,
+.hero-img {
+  display: none;
+}
+
+p {
+  color: grey;
+}
+.foot-logo {
+  flex-wrap: wrap;
+  row-gap: 20px;
+}
+.footer {
+  text-align: center;
+  margin-top: 5rem;
+}
+
+h4 {
+  margin: 0;
+}
+
+button {
+  padding: 1rem;
+  background: rgb(20, 53, 23);
+  border: 0;
+  margin: 0.2rem 0 1rem;
+  color: white;
+  border-radius: 5px;
+}
+span {
+  color: rgb(247, 179, 0);
+}
+
+@media screen and (min-width: 1280px) {
+  body {
+    padding: 1rem 5rem;
+  }
+  .menu {
+    display: none;
+  }
+  .list {
+    position: static;
+    height: auto;
+    background: none;
+    width: auto;
+    transition: none;
+  }
+  ul,
+  .btn {
+    display: flex;
+    column-gap: 35px;
+    margin: 0;
+    color: grey;
+  }
+  h1 {
+    inline-size: 40rem;
+    font-size: 3.5rem;
+    font-weight: 900;
+    word-spacing: 1px;
+  }
+  .hero {
+    column-gap: 5rem;
+    margin-top: 100px;
+  }
+  .hero-img {
+    display: block;
+    width: 400px;
+  }
+  .list {
+    z-index: 99999;
+    margin-left: -200px;
+  }
+
+  #product:hover ~ .pro {
+    display: block;
+  }
+
+  .pro p {
+    line-height: 1.3rem;
+    margin: 0;
+  }
+
+  .log {
+    column-gap: 0.7rem;
+    margin-bottom: 1rem;
+  }
+  .log img {
+    margin-top: -2rem;
+  }
+
+  .pro h4 {
+    color: black;
+  }
+  .log h4 {
+    margin-bottom: -0.3rem;
+  }
+  .pro {
+    background: white;
+    position: fixed;
+    top: 80px;
+    left: 20%;
+    padding: 1.5rem;
+    transition: all 0.5s ease;
+    width: 25rem;
+    border-radius: 10px;
+  }
+
+  .footer {
+    margin: 8rem 7rem 0;
+  }
+}
