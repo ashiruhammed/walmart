@@ -2,10 +2,10 @@
   "name": "java-challenge",
   "version": "1.0.0",
   "description": "",
-  "main": "script.js",
+  "defualt": "script.js",
   "scripts": {
     "start": "parcel index.html",
-    "build": "parcel build index.html"
+    "build": "parcel build index.html --dist-dir"
   },
   "author": "",
   "license": "ISC",
